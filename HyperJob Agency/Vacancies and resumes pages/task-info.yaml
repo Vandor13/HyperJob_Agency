@@ -1179,6 +1179,16 @@ files:
 - name: hyperjob/__init__.py
   visible: true
   learner_created: true
+- name: hyperjob/vacancy/urls.py
+  visible: true
+  learner_created: true
+- name: hyperjob/resume/templates/hyperjob/resumes.html
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/94/stages/521/implement
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/94/stages/521/implement">JetBrains
+    Academy</a>
+  time: Thu, 22 Oct 2020 08:45:49 UTC
 record: -1
