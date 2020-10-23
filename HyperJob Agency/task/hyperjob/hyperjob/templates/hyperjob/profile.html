@@ -1,0 +1,16 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HyperJob</title>
+</head>
+<body>
+    {% if post.is_staff %}
+        <a href="/vacancy/new"> Create new vacancy</a>
+    {% else %}
+        <a href="/resume/new"> Create new resume</a>
+    {% endif %}
+</body>
+</html>

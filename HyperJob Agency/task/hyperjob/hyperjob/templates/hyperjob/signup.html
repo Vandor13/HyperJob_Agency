@@ -1,0 +1,16 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hyperjob</title>
+</head>
+<body>
+    <form method="post" action="signup">
+        {% csrf_token %}
+        <table>{{ form.as_table }}</table>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HyperJob</title>
+</head>
+<body>
+    <form action="/resume/new" method="post">
+        {% csrf_token %}
+        <p>Description:</p>
+        <input type="text" name="description">
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <a target="_blank" href="/">Main Page</a>
+</body>
+</html>

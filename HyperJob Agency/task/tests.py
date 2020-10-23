@@ -16,6 +16,13 @@ class HyperJobTestRunner(HyperJobTest):
             # 3 task
             TestCase(attach=self.check_vacancies),
             TestCase(attach=self.check_resumes),
+            # 4 task
+            TestCase(attach=self.check_signup),
+            TestCase(attach=self.check_login),
+            # 5 task
+            TestCase(attach=self.check_create_resume_from_profile),
+            TestCase(attach=self.check_forbid_to_create_vacancy),
+            TestCase(attach=self.check_forbid_anonymous_create),
         ]
 
     def check(self, reply, attach):
